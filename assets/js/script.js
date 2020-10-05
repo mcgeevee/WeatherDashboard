@@ -118,6 +118,8 @@ $("#search-button").on("click", function (e) {
     $("form")[0].reset();
 })
 
+localStorage.setItem("cityname", cityName);
+
 $(".city-list-box").on("click", ".city-name", function () {
 
     var coordinates = (localStorage.getItem($(this)[0].textContent)).split(" ");
